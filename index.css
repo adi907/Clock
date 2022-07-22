@@ -1,0 +1,44 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+#clockContainer{
+    position:relative;
+    margin:10vh auto;/* Display already block as it is a div. so just margin:auto centres it */
+    height:80vh;width:80vh;
+
+    background: url('clock.png') no-repeat center center/cover;
+    
+}
+
+#hour,#minute,#second{
+    position:absolute;
+    background:black;
+    border-radius:10px;
+
+    transform-origin: bottom;/* Establishes the origin of transformation for an element: is BOTTOM */
+}
+
+#hour{
+    width:3.8%;height:24%;
+    top:27.5%;left:47.8%;
+
+    /* display:none; */
+}
+#minute{
+    width:2.5%;height:30%;
+    top:21.4%;left:48.5%;
+
+    opacity:0.6;
+
+    /* display:none; */
+}
+#second{
+    width:1.8%;height:38%;
+    top:13.2%;left:48.8%;
+
+    opacity:0.5;
+
+    /* display:none; */
+}
